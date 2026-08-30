@@ -1,0 +1,15 @@
+{
+  "name": "Sharun E M",
+  "description": "Cinematographer and colorist based in Coimbatore, working across corporate, brand, and live broadcast projects.",
+  "email": "sharunmuhammed1@gmail.com",
+  "phone": "+91 88917 35100",
+  "location": "Coimbatore, Tamil Nadu, India",
+  "reel_url": "https://youtu.be/lFltIdCAM-E",
+  "reel_embed": "https://www.youtube.com/embed/lFltIdCAM-E",
+  "social": {
+    "linkedin": "https://linkedin.com/in/sharun-cinematographer",
+    "vimeo": "https://vimeo.com/dpsharun",
+    "instagram": "https://instagram.com/dp.sharun"
+  },
+  "categories": ["Corporate & Brand", "Cinematography", "Color Grading"]
+}

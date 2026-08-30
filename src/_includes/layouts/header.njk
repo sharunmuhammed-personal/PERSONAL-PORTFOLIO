@@ -1,0 +1,14 @@
+<header class="site-header">
+  <div class="wrap">
+    <a href="/" class="brand">
+      {{ site.name }}
+      <span class="role">DOP / Colorist</span>
+    </a>
+    <nav class="nav">
+      <a href="/" {% if page.url == "/" %}aria-current="page"{% endif %}>Home</a>
+      <a href="/work/" {% if "/work/" in page.url %}aria-current="page"{% endif %}>Work</a>
+      <a href="/about/" {% if "/about/" in page.url %}aria-current="page"{% endif %}>About</a>
+      <a href="/contact/" {% if "/contact/" in page.url %}aria-current="page"{% endif %}>Contact</a>
+    </nav>
+  </div>
+</header>

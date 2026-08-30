@@ -1,0 +1,16 @@
+{
+  "name": "sharun-em-portfolio",
+  "version": "1.0.0",
+  "description": "Personal cinematographer & colorist portfolio for Sharun E M",
+  "scripts": {
+    "build": "eleventy",
+    "serve": "eleventy --serve",
+    "debug": "DEBUG=Eleventy* eleventy"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.1"
+  },
+  "dependencies": {
+    "luxon": "^3.7.2"
+  }
+}

@@ -1,0 +1,52 @@
+---
+layout: layouts/base.njk
+title: Work
+permalink: /work/
+---
+<section class="hero" style="padding-bottom: 1rem;">
+  <div class="wrap">
+    <span class="eyebrow">Selected Projects</span>
+    <h1 style="font-size: clamp(2rem, 5vw, 3.2rem); margin-top: 0.8rem;">Work</h1>
+    <p class="lede">
+      A mix of corporate and brand shoots, cinematography, and color grading —
+      some projects overlap more than one.
+    </p>
+  </div>
+</section>
+
+<section style="padding-top: 0;">
+  <div class="wrap">
+    <div class="filters" id="filters">
+      <button class="filter-btn active" data-filter="All">All</button>
+      {% for cat in site.categories %}
+      <button class="filter-btn" data-filter="{{ cat }}">{{ cat }}</button>
+      {% endfor %}
+    </div>
+
+    <div class="project-grid" id="project-grid">
+      {% for project in collections.projects %}
+      <article class="project-card" data-categories="{{ project.data.categories | join(',') }}">
+        <div class="project-still">
+          {% if project.data.image %}
+            <img src="{{ project.data.image }}" alt="{{ project.data.title }}">
+          {% else %}
+            <div class="placeholder">{{ loop.index | timecode }}</div>
+          {% endif %}
+        </div>
+        <div class="project-meta">
+          <h3>{{ project.data.title }}</h3>
+          <span class="tc">{{ project.data.date | readableDate }}</span>
+        </div>
+        <p>{{ project.data.summary }}</p>
+        <div class="tag-row">
+          {% for cat in project.data.categories %}
+            <span class="tag">{{ cat }}</span>
+          {% endfor %}
+        </div>
+      </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<script src="/js/filter.js"></script>

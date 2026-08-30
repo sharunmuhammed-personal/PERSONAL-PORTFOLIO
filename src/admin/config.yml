@@ -1,0 +1,55 @@
+backend:
+  name: github
+  repo: YOUR_GITHUB_USERNAME/YOUR_REPO_NAME
+  branch: main
+  base_url: https://your-oauth-proxy.vercel.app
+  auth_endpoint: auth
+
+media_folder: "src/images/uploads"
+public_folder: "/images/uploads"
+
+publish_mode: simple
+
+collections:
+  - name: "projects"
+    label: "Work / Projects"
+    folder: "src/content/projects"
+    create: true
+    slug: "{{slug}}"
+    identifier_field: title
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Date", name: "date", widget: "datetime" }
+      - label: "Categories"
+        name: "categories"
+        widget: "select"
+        multiple: true
+        options:
+          - "Corporate & Brand"
+          - "Cinematography"
+          - "Color Grading"
+      - { label: "Summary", name: "summary", widget: "text" }
+      - { label: "Cover Image", name: "image", widget: "image", required: false }
+      - { label: "Body", name: "body", widget: "markdown", required: false }
+
+  - name: "settings"
+    label: "Site Settings"
+    files:
+      - label: "Global Site Info"
+        name: "site"
+        file: "src/_data/site.json"
+        fields:
+          - { label: "Name", name: "name", widget: "string" }
+          - { label: "Description", name: "description", widget: "text" }
+          - { label: "Email", name: "email", widget: "string" }
+          - { label: "Phone", name: "phone", widget: "string" }
+          - { label: "Location", name: "location", widget: "string" }
+          - { label: "Reel URL (share link)", name: "reel_url", widget: "string" }
+          - { label: "Reel Embed URL", name: "reel_embed", widget: "string" }
+          - label: "Social Links"
+            name: "social"
+            widget: "object"
+            fields:
+              - { label: "LinkedIn", name: "linkedin", widget: "string" }
+              - { label: "Vimeo", name: "vimeo", widget: "string" }
+              - { label: "Instagram", name: "instagram", widget: "string" }

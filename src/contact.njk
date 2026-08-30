@@ -1,0 +1,32 @@
+---
+layout: layouts/base.njk
+title: Contact
+permalink: /contact/
+---
+<section class="hero" style="padding-bottom: 1rem;">
+  <div class="wrap">
+    <span class="eyebrow">Get in Touch</span>
+    <h1 style="font-size: clamp(2rem, 5vw, 3.2rem); margin-top: 0.8rem;">Let's talk about your project.</h1>
+    <p class="lede">
+      Open to both freelance shoots and full-time cinematographer roles —
+      corporate, brand, or live broadcast.
+    </p>
+  </div>
+</section>
+
+<section style="padding-top: 0;">
+  <div class="wrap">
+    <a class="btn primary" href="mailto:{{ site.email }}" style="font-size: 0.9rem; padding: 1.1rem 2rem; margin-bottom: 2.5rem;">
+      Email {{ site.email }}
+    </a>
+
+    <ul class="contact-list">
+      <li><span class="eyebrow">Email</span> <a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+      <li><span class="eyebrow">Phone</span> <a href="tel:{{ site.phone }}">{{ site.phone }}</a></li>
+      <li><span class="eyebrow">Location</span> <span>{{ site.location }}</span></li>
+      <li><span class="eyebrow">LinkedIn</span> <a href="{{ site.social.linkedin }}" target="_blank" rel="noopener">Profile</a></li>
+      <li><span class="eyebrow">Vimeo</span> <a href="{{ site.social.vimeo }}" target="_blank" rel="noopener">Reel</a></li>
+      <li><span class="eyebrow">Instagram</span> <a href="{{ site.social.instagram }}" target="_blank" rel="noopener">@dp.sharun</a></li>
+    </ul>
+  </div>
+</section>
