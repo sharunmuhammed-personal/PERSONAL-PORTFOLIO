@@ -2,7 +2,7 @@ backend:
   name: github
   repo: sharunmuhammed-personal/netlify-cms-github-oauth-provider
   branch: main
-  base_url: https://netlify-cms-github-oauth-provider-abc123.vercel.app
+  base_url: https://netlify-cms-github-oauth-provider-eight-mocha.vercel.app/
   auth_endpoint: auth
 
 media_folder: "src/images/uploads"
