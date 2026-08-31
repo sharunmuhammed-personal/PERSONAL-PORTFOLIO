@@ -2,7 +2,7 @@ backend:
   name: github
   repo: sharunmuhammed-personal/PERSONAL-PORTFOLIO
   branch: main
-  base_url: https://netlify-cms-github-oauth-provider-pearl.vercel.app/
+  base_url: https://personal-portfolio-coral-psi-64.vercel.app/
   auth_endpoint: auth
 
 media_folder: "src/images/uploads"
